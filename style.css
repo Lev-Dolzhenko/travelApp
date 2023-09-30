@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  font-family: Lato;
+}
+
+._container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/*--------------------------DefaultSettings------------------------------*/
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 740px) {
+  .header-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-nav div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .nav-links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav-navigation {
+    width: 50%;
+  }
+}
+@media (max-width: 710px) {
+  .nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.nav-link-logo {
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  color: #42A7C3;
+}
+
+.nav-navigation {
+  width: 30%;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.nav-button {
+  background-color: #FA8443;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 46px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 25px;
+  font-weight: 700;
+  font-family: Lato;
+  text-align: center;
+}
+
+.nav-btn {
+  color: #ebebeb;
+  letter-spacing: normal;
+}
+
+/*--------------------------Header------------------------------*/
