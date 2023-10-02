@@ -227,3 +227,79 @@ body {
 }
 
 /*--------------------------Header------------------------------*/
+.page-main {
+  margin-top: 60px;
+}
+
+.suggestions-title {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.suggestions-subtitle {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 13px;
+  color: rgb(134, 134, 134);
+}
+
+.suggestions-cards {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.suggestions-card {
+  margin-top: 50px;
+}
+
+.suggestions-card-info {
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.suggestions-card-info:hover {
+  background-color: rgba(255, 109, 31, 0.2039215686);
+}
+
+.card-image {
+  padding-top: 5px;
+}
+
+.location-icon {
+  position: absolute;
+  left: 14px;
+}
+
+.card-geolocation {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.card-name {
+  padding-left: 14px;
+  margin-bottom: 4px;
+}
+
+.card-days {
+  padding-left: 14px;
+}
+
+.card-price {
+  margin-top: 16px;
+  padding-left: 14px;
+  color: rgba(0, 162, 255, 0.603);
+  padding-bottom: 16px;
+}
+.card-price span {
+  font-weight: bold;
+}
