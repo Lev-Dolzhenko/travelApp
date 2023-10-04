@@ -249,7 +249,7 @@ body {
     margin-top: 60px;
 }
 
-.suggestions-title {
+.suggestions-title, .advantages-title {
     font-family: Lato;
     font-weight: 700;
     font-size: 30px;
@@ -257,7 +257,7 @@ body {
     margin-bottom: 8px;
 }
 
-.suggestions-subtitle {
+.suggestions-subtitle, .advantages-item-sibtitle {
     font-family: Lato;
     font-weight: 700;
     font-size: 13px;
@@ -332,4 +332,82 @@ body {
         padding-left: 0;
         text-align: center;
     }
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 160px;
+    padding-bottom: 20px;
+}
+
+.advantages-image {
+    position: absolute;
+    top: 0%;
+    left: 18%;
+}
+
+@media (max-width: 1024px) {
+    .advantages-image {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages-image {
+        position: absolute;
+        top: 0%;
+        left: -8%;
+    }
+}
+
+@media (max-width: 425px) {
+    .advantages-image {
+        position: absolute;
+        top: 0%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .advantages-subtitle {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .advantages-title {
+        text-align: center;
+    }
+}
+
+.advantages-subtitle {
+    padding-top: 10px;
+    font-family: Lato;
+    font-weight: regular;
+    font-size: 17px;
+    line-height: normal;
+}
+.advantages-more-info {
+    margin-top: 30px;
+}
+.advantages-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding: 30px 20px;
+    transition: 0.2s linear;
+    border-radius: 10px;
+}
+
+.advantages-item:hover {
+    box-shadow: 1px 1px 15px 2px#888787;
+}
+
+.advantages-item-title {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: 15px;
+    padding-bottom: 4px;
 }
