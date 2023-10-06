@@ -66,18 +66,20 @@ body {
 
 }
 
+
 /*--------------------------DefaultSettings------------------------------*/
 
 .page-header {
-    //background-image: url(/content/bg.jpg);
-    //background-repeat: no-repeat;
-    //background-size: cover;
-    max-width: 1300px;
-    background-color: #75b5ff;
+    background-image: url(/content/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-color: #75b5ff;
     padding-bottom: 20px;
     padding-top: 20px;
     position: relative;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .header-nav {
